@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/tiktak/serialization/main/Challenge.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/tiktak/serialization/main/ID.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/tiktak/serialization/main/Message.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/tiktak/serialization/main/MessageInput.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/tiktak/serialization/main/MessageOutput.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/tiktak/serialization/main/Version.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/tiktak/serialization/test/ChallengeTests.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/tiktak/serialization/test/IDTests.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/tiktak/serialization/test/MessageTests.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/tiktak/serialization/test/VersionTests.java" charset="ISO-8859-1" />
+  </component>
+</project>
