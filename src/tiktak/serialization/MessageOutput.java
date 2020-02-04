@@ -7,7 +7,12 @@ public class MessageOutput {
     private OutputStream out;
 
     public MessageOutput(OutputStream out){
-        this.out = out;
+        if (out == null){
+            throw new NullPointerException("NULL OUTPUT STREAM");
+        }
+        else {
+            this.out = out;
+        }
     }
 
     public OutputStream getOut() {

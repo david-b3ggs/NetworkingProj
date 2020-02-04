@@ -157,7 +157,7 @@ public class MessageTests {
     @Test
     void testGetOperationValidTIK(){
         Message id = new Version();
-        Assertions.assertEquals("VERSION", id.getOperation());
+        Assertions.assertEquals("TIKTAK", id.getOperation());
     }
 
     @Test
@@ -169,6 +169,6 @@ public class MessageTests {
     @Test
     void testGetOperationValidChallenge(){
         Message id = new Challenge("");
-        Assertions.assertEquals("CHALLENGE", id.getOperation());
+        Assertions.assertEquals("CLNG", id.getOperation());
     }
 }

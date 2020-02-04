@@ -7,7 +7,12 @@ public class MessageInput {
     private InputStream i;
 
     public MessageInput(InputStream in){
-        i = in;
+        if (in == null){
+            throw new NullPointerException("NULL INPUT STREAM");
+        }
+        else {
+            i = in;
+        }
     }
 
     public InputStream getInStream() {

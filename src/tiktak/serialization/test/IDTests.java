@@ -15,46 +15,46 @@ import java.nio.charset.StandardCharsets;
 @DisplayName("All IDTests")
 public class IDTests {
 
-    private ID id = new ID("USER");
+    private ID id;
     private static final byte[] IDENC = "ID user\r\n".getBytes(StandardCharsets.ISO_8859_1);
 
     @Test
-    void testSetIDValid(){
-        Assertions.assertDoesNotThrow(() -> id.setId("1a"));
+    void testsetIDValid(){
+        Assertions.assertDoesNotThrow(() -> id.setID("1a"));
     }
 
     @Test
-    void testSetIDNonAlphNumeric1(){
+    void testsetIDNonAlphNumeric1(){
         final String testID = "%Hi[";
 
-        Assertions.assertThrows(ValidationException.class, () -> id.setId(testID));
+        Assertions.assertThrows(ValidationException.class, () -> id.setID(testID));
     }
 
     @Test
-    void testSetIDNonAlphNumeric2(){
+    void testsetIDNonAlphNumeric2(){
         final String testID = "asdfsdlfdsaljk1231u9$";
 
-        Assertions.assertThrows(ValidationException.class, () -> id.setId(testID));
+        Assertions.assertThrows(ValidationException.class, () -> id.setID(testID));
     }
 
     @Test
-    void testSetIDNonAlphNumeric3(){
+    void testsetIDNonAlphNumeric3(){
         final String testID = "asdfsdlfd/saljk1231u9";
 
-        Assertions.assertThrows(ValidationException.class, () -> id.setId(testID));
+        Assertions.assertThrows(ValidationException.class, () -> id.setID(testID));
     }
 
     @Test
-    void testSetIDBlank(){
+    void testsetIDBlank(){
         final String testID = " ";
 
-        Assertions.assertThrows(ValidationException.class, () -> id.setId(testID));
+        Assertions.assertThrows(ValidationException.class, () -> id.setID(testID));
     }
 
     @Test
     void testGetID() throws ValidationException{
         final String test = "testid4";
-        id.setId(test);
+        id.setID(test);
 
         Assertions.assertEquals("testid4", id.getID());
     }
@@ -64,7 +64,7 @@ public class IDTests {
     @DisplayName("EncodeTests")
     class EncodeTests{
         private String USER = "user";
-        private ID id = new ID(USER);
+        private ID id;
 
         @Test
         void testEncodeThrowsNull(){
@@ -79,7 +79,7 @@ public class IDTests {
         }
 
         @Test
-        void testEncode() throws NullPointerException, IOException {
+        void testEncode() throws NullPointerException, IOException, ValidationException {
             ByteArrayOutputStream bout = new ByteArrayOutputStream();
             new ID(USER).encode(new MessageOutput(bout));
             Assertions.assertArrayEquals(IDENC, bout.toByteArray());

@@ -16,7 +16,7 @@ import java.nio.charset.StandardCharsets;
 @DisplayName("Challenge Tests")
 public class ChallengeTests {
 
-    private Challenge challenge = new Challenge("");
+    private Challenge challenge = null;
 
     @Test
     void testGetNonce() throws ValidationException{
@@ -45,16 +45,40 @@ public class ChallengeTests {
 
     @Test
     void testSetNonce3(){
+        final String test = null;
+        Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(test));
+    }
+
+    @Test
+    void testSetNonce4(){
         Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(""));
+    }
+
+    @Test
+    void testSetNonce5(){
+        final String test = "s?ring";
+        Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(test));
+    }
+
+    @Test
+    void testSetNonce6(){
+        final String test = "-1";
+        Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(test));
+    }
+
+    @Test
+    void testSetNonce7(){
+        final String test = "null";
+        Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(test));
     }
 
     @Nested
     @DisplayName("EncodeTests")
-    class EncodeTests{
+    class EncodeTests {
 
         private final byte[] IDENC = "CLNG 123\r\n".getBytes(StandardCharsets.ISO_8859_1);
 
-        Challenge challenge = new Challenge("");
+        Challenge challenge = null;
 
         @Test
         void testEncodeThrowsNull(){
@@ -69,7 +93,7 @@ public class ChallengeTests {
         }
 
         @Test
-        void testEncode() throws NullPointerException, IOException {
+        void testEncode() throws NullPointerException, IOException, ValidationException {
             ByteArrayOutputStream bout = new ByteArrayOutputStream();
             new Challenge("123").encode(new MessageOutput(bout));
             Assertions.assertArrayEquals(IDENC, bout.toByteArray());

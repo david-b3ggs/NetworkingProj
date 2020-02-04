@@ -1,17 +1,35 @@
 package tiktak.serialization;
 
+import java.io.EOFException;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
+import java.util.Scanner;
 
 public abstract class Message {
 
+    private final HashMap<String, String> operationMap = new HashMap<>();
+
+    Message(){
+        this.operationMap.put("CHALLENGE", "CLNG");
+        this.operationMap.put("VERSION", "TIKTAK");
+        this.operationMap.put("ID", "ID");
+    }
+
     public static Message decode(MessageInput in) throws IOException, NullPointerException, ValidationException {
 
+        if (in == null){
+            throw new NullPointerException("NULL MESSAGE INPUT DETECTED");
+        }
 
-        //parse string to determine what subclass to pass
-        byte [] messageBytes = in.getInStream().readAllBytes();
-        String message = new String(messageBytes, StandardCharsets.ISO_8859_1);
-        String sub = message.substring(0, message.length() - 2);
+        Scanner s = new Scanner(in.getInStream(), StandardCharsets.ISO_8859_1);
+        s.useDelimiter("(?<=\\r\\n)");
+
+        if (!s.hasNext()){
+            throw new EOFException("PREMATURE END OF STREAM REACHED");
+        }
+
+        String message = s.next();
 
         if (message.startsWith("TIKTAK ")){
             if (message.equals("TIKTAK 1.0\r\n")){
@@ -22,13 +40,14 @@ public abstract class Message {
             }
         }
         else if (message.endsWith(" ") || message.endsWith(" \r\n") || !message.endsWith("\r\n")){
-            throw new ValidationException("Invalid Message");
+            throw new EOFException("PREMATURE END OF STREAM");
         }
         else {
-            if(sub.matches("(ID [0-9a-zA-Z]*)")){
+            message = message.substring(0, message.length() - 2);
+            if(message.matches("(ID [0-9a-zA-Z]*)")){
                 return new ID(message.split(" ")[1]);
             }
-            else if (sub.matches("(CLNG [0-9]*)")){
+            else if (message.matches("(CLNG [0-9]*)")){
                 return new Challenge(message.split(" ")[1]);
             }
             else {
@@ -42,7 +61,7 @@ public abstract class Message {
     public String getOperation(){
         String out = this.getClass().getName().toUpperCase();
         String[] array = out.split("[.]");
-        return array[array.length - 1];
+        return this.operationMap.get(array[array.length - 1]);
     }
 
 }
