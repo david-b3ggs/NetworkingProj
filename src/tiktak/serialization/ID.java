@@ -10,13 +10,16 @@ public class ID extends Message {
 
     public ID(String s) throws ValidationException{
         super();
-        Objects.requireNonNull(s, "DO NOT SEND NULL STRINGS");
+
+        if (s == null){
+            throw  new ValidationException("DO NOT SEND NJLL STRINGS", "STRING WAS NULL");
+        }
 
         if (!s.isEmpty() && !s.isBlank() && s.matches("([0-9a-zA-Z]*)") ){
             this.id = s;
         }
         else {
-            throw new ValidationException("NONCE FORMAT ERROR");
+            throw new ValidationException("NONCE FORMAT ERROR", s);
         }
     }
 
@@ -27,7 +30,7 @@ public class ID extends Message {
     public ID setID(String id)throws ValidationException{
 
         if (id == null){
-            throw new ValidationException("NONCE FORMAT ERROR");
+            throw new ValidationException("NONCE FORMAT ERROR", "IS NULL");
         }
 
         if (!id.isEmpty() && !id.isBlank() && id.matches("([0-9a-zA-Z]*)") ){
@@ -35,7 +38,7 @@ public class ID extends Message {
             return this;
         }
         else {
-            throw new ValidationException("NONCE FORMAT ERROR");
+            throw new ValidationException("NONCE FORMAT ERROR", id);
         }
     }
 

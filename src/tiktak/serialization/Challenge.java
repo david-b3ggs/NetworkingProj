@@ -15,7 +15,7 @@ public class Challenge extends Message {
     public Challenge setNonce(String nonceArg) throws ValidationException{
 
         if (nonceArg == null || nonceArg.matches("([^0-9]*)")){
-            throw new ValidationException("Nonce format error");
+            throw new ValidationException("NONCE FORMAT ERROR", nonceArg);
         }
 
         if (!nonceArg.isEmpty() && !nonceArg.isBlank() && nonceArg.matches("(^[0-9]*$)") ){
@@ -23,7 +23,7 @@ public class Challenge extends Message {
             return this;
         }
         else {
-            throw new ValidationException("NONCE FORMAT ERROR");
+            throw new ValidationException("NONCE FORMAT ERROR", nonceArg);
         }
     }
 
@@ -31,14 +31,14 @@ public class Challenge extends Message {
         super();
 
         if (s == null){
-            throw new ValidationException("DO NOT SEND NULL STRINGS");
+            throw new ValidationException("DO NOT SEND NULL STRINGS", s);
         }
 
         if (!s.isEmpty() && !s.isBlank() && s.matches("([0-9]*)") ){
             this.nonce = s;
         }
         else {
-            throw new ValidationException("NONCE FORMAT ERROR");
+            throw new ValidationException("NONCE FORMAT ERROR", s);
         }
     }
 

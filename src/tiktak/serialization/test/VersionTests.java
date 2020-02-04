@@ -16,7 +16,7 @@ public class VersionTests {
 
     @Test
     void testToString(){
-        Assertions.assertEquals("TIKTAK 1.0\r\n", version.toString());
+        Assertions.assertEquals("TikTak", version.toString());
     }
 
     @Nested

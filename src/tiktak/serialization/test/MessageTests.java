@@ -25,7 +25,7 @@ public class MessageTests {
         void testMessageDecodeValidException(){
             final String input = "notgood";
             InputStream in = new ByteArrayInputStream(input.getBytes());
-            Assertions.assertThrows(ValidationException.class, () -> Message.decode(new MessageInput(in)));
+            Assertions.assertThrows(EOFException.class, () -> Message.decode(new MessageInput(in)));
         }
 
         @Test
@@ -41,7 +41,6 @@ public class MessageTests {
             Assertions.assertThrows(ValidationException.class, () -> Message.decode(new MessageInput(in)));
         }
 
-
         @Test
         void testDecodeReturnID() throws IOException, ValidationException{
             final String input = "ID a1\r\n";
@@ -55,7 +54,7 @@ public class MessageTests {
             final String input = "ID \r\n";
             InputStream in = new ByteArrayInputStream(input.getBytes());
 
-            Assertions.assertThrows(ValidationException.class, () -> Message.decode(new MessageInput(in)));
+            Assertions.assertThrows(EOFException.class, () -> Message.decode(new MessageInput(in)));
         }
 
         @Test
@@ -102,7 +101,7 @@ public class MessageTests {
             final String input = "TIKTAK 1\r\n";
             InputStream in = new ByteArrayInputStream(input.getBytes());
 
-            Assertions.assertThrows(ValidationException.class, () ->Message.decode(new MessageInput(in)));
+            Assertions.assertThrows(EOFException.class, () ->Message.decode(new MessageInput(in)));
         }
 
         @Test
@@ -110,7 +109,7 @@ public class MessageTests {
             final String input = "TIKTAK 10\r\n";
             InputStream in = new ByteArrayInputStream(input.getBytes());
 
-            Assertions.assertThrows(ValidationException.class, () ->Message.decode(new MessageInput(in)));
+            Assertions.assertThrows(EOFException.class, () ->Message.decode(new MessageInput(in)));
         }
 
         @Test
@@ -142,7 +141,7 @@ public class MessageTests {
             final String input = "CLNG \r\n";
             InputStream in = new ByteArrayInputStream(input.getBytes());
 
-            Assertions.assertThrows(ValidationException.class, () -> Message.decode(new MessageInput(in)));
+            Assertions.assertThrows(EOFException.class, () -> Message.decode(new MessageInput(in)));
         }
 
         @Test
@@ -151,6 +150,68 @@ public class MessageTests {
             InputStream in = new ByteArrayInputStream(input.getBytes());
 
             Assertions.assertThrows(ValidationException.class, () -> Message.decode(new MessageInput(in)));
+        }
+
+        @Test
+        void testDecodeAckMessage() throws IOException, ValidationException{
+            final String input = "ACK\r\n";
+            InputStream in = new ByteArrayInputStream(input.getBytes());
+
+            Assertions.assertTrue(Message.decode(new MessageInput(in)) instanceof Ack);
+        }
+
+        @Test
+        void testInvalidACK()throws IOException, ValidationException{
+        }
+
+        @Test
+        void testDecodeTostMessage(){
+
+        }
+
+        @Test
+        void testInvalidTost(){
+
+        }
+
+        @Test
+        void testDecodeCredentials(){
+
+        }
+
+        @Test
+        void testInvalidCredentials1(){
+
+        }
+
+        @Test
+        void testInvalidCredentials2(){
+
+        }
+
+        @Test
+        void testDecodeLtsRL(){
+
+        }
+
+        @Test
+        void testInvalidLtsRL1(){
+
+        }
+
+        @Test
+        void testInvalidLtsRL2(){
+
+        }
+
+        @Test
+        void testDecodeError(){
+
+        }
+
+        @Test
+        void testInvalidError1(){
+
         }
     }
 
@@ -161,14 +222,14 @@ public class MessageTests {
     }
 
     @Test
-    void testGetOperationValidID(){
+    void testGetOperationValidID() throws ValidationException{
         Message id = new ID("USER");
         Assertions.assertEquals("ID", id.getOperation());
     }
 
     @Test
-    void testGetOperationValidChallenge(){
-        Message id = new Challenge("");
+    void testGetOperationValidChallenge() throws ValidationException {
+        Message id = new Challenge("123");
         Assertions.assertEquals("CLNG", id.getOperation());
     }
 }

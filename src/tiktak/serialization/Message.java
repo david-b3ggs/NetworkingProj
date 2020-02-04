@@ -14,6 +14,11 @@ public abstract class Message {
         this.operationMap.put("CHALLENGE", "CLNG");
         this.operationMap.put("VERSION", "TIKTAK");
         this.operationMap.put("ID", "ID");
+        this.operationMap.put("ACK", "ACK");
+        this.operationMap.put("TOST", "TOST");
+        this.operationMap.put("ERROR", "ERROR");
+        this.operationMap.put("CREDENTIALS", "CRED");
+        this.operationMap.put("LTSRL", "LTSRL");
     }
 
     public static Message decode(MessageInput in) throws IOException, NullPointerException, ValidationException {
@@ -36,7 +41,7 @@ public abstract class Message {
                 return new Version();
             }
             else {
-                throw new ValidationException("Invalid Message");
+                throw new EOFException("Invalid Message");
             }
         }
         else if (message.endsWith(" ") || message.endsWith(" \r\n") || !message.endsWith("\r\n")){
@@ -51,7 +56,7 @@ public abstract class Message {
                 return new Challenge(message.split(" ")[1]);
             }
             else {
-                throw new ValidationException("Invalid Message");
+                throw new ValidationException("Invalid Message", message);
             }
         }
     }

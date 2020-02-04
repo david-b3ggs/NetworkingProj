@@ -1,16 +1,18 @@
 package tiktak.serialization;
 
 public class ValidationException extends Exception {
+    private String badToken;
 
-    ValidationException(){
-        super();
+    ValidationException(String message, Throwable cause, String badToken){
+        super(message, cause);
+        this.badToken = badToken;
     }
 
-    public ValidationException(String message){
-        super(message);
+    public ValidationException(String message, String badToken){
+        this(message, null, badToken);
     }
 
-    public ValidationException(String message, Throwable throwable){
-        super(message, throwable);
+    public String getBadToken() {
+        return badToken;
     }
 }

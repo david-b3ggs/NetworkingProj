@@ -20,55 +20,64 @@ public class ChallengeTests {
 
     @Test
     void testGetNonce() throws ValidationException{
-        challenge.setNonce("123");
+        challenge = new Challenge("123");
 
         Assertions.assertEquals("123", challenge.getNonce());
     }
 
     @Test
-    void testSetNonceValid(){
+    void testSetNonceValid() throws ValidationException{
         final String test = "123";
+        challenge = new Challenge(test);
         Assertions.assertDoesNotThrow(() -> challenge.setNonce(test));
     }
 
     @Test
-    void testSetNonce1(){
+    void testSetNonce1() throws ValidationException{
         final String test= "q234";
+        challenge = new Challenge("123");
         Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(test));
     }
 
     @Test
-    void testSetNonce2(){
+    void testSetNonce2() throws ValidationException{
         final String test = "23 fds";
+        challenge = new Challenge("123");
         Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(test));
     }
 
     @Test
-    void testSetNonce3(){
+    void testSetNonce3() throws ValidationException{
         final String test = null;
+        challenge = new Challenge("123");
         Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(test));
     }
 
     @Test
-    void testSetNonce4(){
+    void testSetNonce4() throws ValidationException{
+        final String tests = "34";
+        challenge = new Challenge(tests);
         Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(""));
     }
 
     @Test
-    void testSetNonce5(){
+    void testSetNonce5() throws ValidationException{
         final String test = "s?ring";
+        challenge = new Challenge("123");
         Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(test));
     }
 
     @Test
-    void testSetNonce6(){
+    void testSetNonce6() throws ValidationException{
         final String test = "-1";
+        challenge = new Challenge("123");
         Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(test));
     }
 
     @Test
-    void testSetNonce7(){
+    void testSetNonce7() throws ValidationException{
         final String test = "null";
+        challenge = new Challenge("123");
         Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(test));
     }
 

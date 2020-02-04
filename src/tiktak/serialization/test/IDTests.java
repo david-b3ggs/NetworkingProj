@@ -19,43 +19,43 @@ public class IDTests {
     private static final byte[] IDENC = "ID user\r\n".getBytes(StandardCharsets.ISO_8859_1);
 
     @Test
-    void testsetIDValid(){
+    void testsetIDValid() throws ValidationException{
+        id = new ID("123");
         Assertions.assertDoesNotThrow(() -> id.setID("1a"));
     }
 
     @Test
-    void testsetIDNonAlphNumeric1(){
+    void testsetIDNonAlphNumeric1() throws ValidationException{
         final String testID = "%Hi[";
-
+        id = new ID("abc");
         Assertions.assertThrows(ValidationException.class, () -> id.setID(testID));
     }
 
     @Test
-    void testsetIDNonAlphNumeric2(){
+    void testsetIDNonAlphNumeric2() throws ValidationException{
         final String testID = "asdfsdlfdsaljk1231u9$";
-
+        id = new ID("abc");
         Assertions.assertThrows(ValidationException.class, () -> id.setID(testID));
     }
 
     @Test
-    void testsetIDNonAlphNumeric3(){
+    void testsetIDNonAlphNumeric3() throws ValidationException{
         final String testID = "asdfsdlfd/saljk1231u9";
-
+        id = new ID("abc");
         Assertions.assertThrows(ValidationException.class, () -> id.setID(testID));
     }
 
     @Test
-    void testsetIDBlank(){
+    void testsetIDBlank() throws ValidationException{
         final String testID = " ";
-
+        id = new ID("abc");
         Assertions.assertThrows(ValidationException.class, () -> id.setID(testID));
     }
 
     @Test
     void testGetID() throws ValidationException{
         final String test = "testid4";
-        id.setID(test);
-
+        id = new ID(test);
         Assertions.assertEquals("testid4", id.getID());
     }
 
