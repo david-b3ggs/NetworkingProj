@@ -9,6 +9,7 @@ public class LtsRL {
     private byte [] image;
 
     public LtsRL(String category, byte [] image){
+        super();
 
     }
 

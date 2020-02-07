@@ -2,39 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e9fc1b9-cd6d-4c7c-90fe-8ef42f6f9798" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tiktak/serialization/Ack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tiktak/serialization/Credentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tiktak/serialization/Error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tiktak/serialization/LtsRL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tiktak/serialization/Tost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tiktak/serialization/test/AckTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tiktak/serialization/test/CredentialsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tiktak/serialization/test/ErrorTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tiktak/serialization/test/LtsrlTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tiktak/serialization/test/TostTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/P0Full.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/Challenge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/Challenge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/ID.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/ID.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/ValidationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/ValidationException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/Version.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/Version.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/test/ChallengeTests$EncodeTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/test/ChallengeTests$EncodeTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/test/ChallengeTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/test/ChallengeTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/test/IDTests$EncodeTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/test/IDTests$EncodeTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/test/IDTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/test/IDTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/test/MessageTests$DecodeTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/test/MessageTests$DecodeTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/test/MessageTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/test/MessageTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/test/VersionTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/test/VersionTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tiktak.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tiktak/serialization/Challenge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/serialization/Challenge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tiktak/serialization/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/serialization/ID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tiktak/serialization/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/serialization/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tiktak/serialization/ValidationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/serialization/ValidationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tiktak/serialization/test/ChallengeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/serialization/test/ChallengeTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tiktak/serialization/test/IDTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/serialization/test/IDTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tiktak/serialization/test/MessageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/serialization/test/MessageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tiktak/serialization/test/VersionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/serialization/test/VersionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tiktak/serialization/Ack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/serialization/Ack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tiktak/serialization/Credentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/serialization/Credentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tiktak/serialization/Error.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/serialization/Error.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tiktak/serialization/Tost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/serialization/Tost.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,97 +24,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/test/ErrorTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1862">
-              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Error.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1076#1077#0" expanded="true" />
-                <element signature="e#1122#1123#0" expanded="true" />
-                <element signature="e#1160#1161#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/test/LtsrlTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/test/AckTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="32" />
-              <folding>
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/test/MessageTests.java">
+        <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Credentials.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="163" column="69" selection-start-line="163" selection-start-column="69" selection-end-line="163" selection-end-column="69" />
+            <state relative-caret-position="464">
+              <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Message.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-437">
-              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/LtsRL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#204#205#0" expanded="true" />
-                <element signature="e#235#236#0" expanded="true" />
-                <element signature="e#283#284#0" expanded="true" />
-                <element signature="e#323#324#0" expanded="true" />
-                <element signature="e#355#356#0" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
+                <element signature="e#327#328#0" expanded="true" />
+                <element signature="e#386#387#0" expanded="true" />
+                <element signature="e#1346#1347#0" expanded="true" />
+                <element signature="e#1387#1388#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,6 +67,8 @@
       <find>get</find>
       <find>assertThrows</find>
       <find>toString</find>
+      <find>throw new vali</find>
+      <find>encode</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,22 +93,22 @@
         <option value="$PROJECT_DIR$/src/tiktak/serialization/ValidationException.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/Challenge.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/ID.java" />
-        <option value="$PROJECT_DIR$/src/tiktak/serialization/Ack.java" />
-        <option value="$PROJECT_DIR$/src/tiktak/serialization/Tost.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/test/TostTests.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/test/ChallengeTests.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/test/VersionTests.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/test/IDTests.java" />
-        <option value="$PROJECT_DIR$/src/tiktak/serialization/Credentials.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/Message.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/Ltsrl.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/LtsRL.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/test/LtsrlTests.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/test/AckTests.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/test/CredentialsTests.java" />
-        <option value="$PROJECT_DIR$/src/tiktak/serialization/Error.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/test/ErrorTests.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/test/MessageTests.java" />
+        <option value="$PROJECT_DIR$/src/tiktak/serialization/Ack.java" />
+        <option value="$PROJECT_DIR$/src/tiktak/serialization/Tost.java" />
+        <option value="$PROJECT_DIR$/src/tiktak/serialization/Error.java" />
+        <option value="$PROJECT_DIR$/src/tiktak/serialization/Credentials.java" />
       </list>
     </option>
   </component>
@@ -249,13 +143,6 @@
               <item name="TikTak" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="serialization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TikTak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TikTak" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="serialization" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -394,7 +281,7 @@
       <updated>1579660177773</updated>
       <workItem from="1579660181438" duration="22069000" />
       <workItem from="1579927742176" duration="16000" />
-      <workItem from="1580149754196" duration="56605000" />
+      <workItem from="1580149754196" duration="64543000" />
     </task>
     <servers />
   </component>
@@ -431,7 +318,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78690000" />
+    <option name="totallyTimeSpent" value="86628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
@@ -593,19 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/ValidationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/ID.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -616,27 +490,6 @@
             <element signature="e#794#795#0" expanded="true" />
             <element signature="e#1347#1348#0" expanded="true" />
             <element signature="e#1386#1387#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Tost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Version.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="85" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -663,55 +516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Challenge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#128#129#0" expanded="true" />
-            <element signature="e#155#156#0" expanded="true" />
-            <element signature="e#1138#1139#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#2114#2115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Credentials.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#1346#1347#0" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/LtsRL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-13.0.2/lib/src.zip!/java.base/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -719,18 +523,6 @@
           <folding>
             <element signature="e#5757#5758#0" expanded="true" />
             <element signature="e#5793#5794#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Ack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -771,15 +563,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Error.java">
+    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/test/ErrorTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        <state relative-caret-position="-1862">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1076#1077#0" expanded="true" />
-            <element signature="e#1122#1123#0" expanded="true" />
-            <element signature="e#1160#1161#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -795,20 +584,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/test/ErrorTests.java">
+    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/test/LtsrlTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1862">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+        <state relative-caret-position="510">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/test/LtsrlTests.java">
+    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/LtsRL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="510">
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/test/MessageTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="163" column="69" selection-start-line="163" selection-start-column="69" selection-end-line="163" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Version.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="33" column="57" lean-forward="true" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -817,20 +634,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-437">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        <state relative-caret-position="175">
+          <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/test/MessageTests.java">
+    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/ValidationException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="163" column="69" selection-start-line="163" selection-start-column="69" selection-end-line="163" selection-end-column="69" />
+        <state relative-caret-position="187">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Tost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Error.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="73" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Ack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Challenge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2072#2073#0" expanded="true" />
+            <element signature="e#2114#2115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Credentials.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#1346#1347#0" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
           </folding>
         </state>
       </provider>

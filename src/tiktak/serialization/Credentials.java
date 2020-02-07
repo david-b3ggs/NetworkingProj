@@ -8,16 +8,15 @@ public class Credentials extends Message{
 
     private String hash;
 
-    public Credentials(String hash){
+    public Credentials(String hash) throws ValidationException{
         super();
+        hashValidation(hash);
         this.hash = hash;
     }
 
     @Override
     public String toString() {
-        return "Credentials{" +
-                "hash='" + hash + '\'' +
-                '}';
+        return "Credentials: hash=" + this.getHash();
     }
 
     @Override
@@ -29,7 +28,7 @@ public class Credentials extends Message{
             throw new IOException("Message Output Null Exception");
         }
 
-        String returnString = "CRED H(" + this.getHash() + "\r\n";
+        String returnString = "CRED " + this.getHash() +"\r\n";
         out.getOut().write(returnString.getBytes(StandardCharsets.ISO_8859_1));
     }
 
@@ -37,8 +36,11 @@ public class Credentials extends Message{
         return hash;
     }
 
-    public void setHash(String hash) {
+    public Credentials setHash(String hash) throws ValidationException{
+        hashValidation(hash);
         this.hash = hash;
+
+        return this;
     }
 
     @Override
@@ -52,5 +54,19 @@ public class Credentials extends Message{
     @Override
     public int hashCode() {
         return Objects.hash(hash);
+    }
+
+    void hashValidation(String hash) throws ValidationException {
+        if (hash == null){
+            throw new ValidationException("RECIEVED A NULL HASH", "Null Value");
+        }
+
+        if (hash.length() != 32){
+            throw new ValidationException("HASH LENGTH INCORRECT FORMAT", hash);
+        }
+
+        if (!hash.matches("([0-9a-fA-F]*)")){
+            throw new ValidationException("HASH MUST CONTAIN ONLY HEX CHARACTERS", hash);
+        }
     }
 }

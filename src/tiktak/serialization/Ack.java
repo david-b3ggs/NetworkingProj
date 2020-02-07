@@ -29,6 +29,6 @@ public class Ack extends Message {
         if (out.getOut() == null){
             throw new IOException("Message Output Null Exception");
         }
-        out.getOut().write("ACK".getBytes(StandardCharsets.ISO_8859_1));
+        out.getOut().write("ACK\r\n".getBytes(StandardCharsets.ISO_8859_1));
     }
 }
