@@ -12,7 +12,7 @@ public class ID extends Message {
         super();
 
         if (s == null){
-            throw  new ValidationException("DO NOT SEND NJLL STRINGS", "STRING WAS NULL");
+            throw  new ValidationException("DO NOT SEND NULL STRINGS", "STRING WAS NULL");
         }
 
         if (!s.isEmpty() && !s.isBlank() && s.matches("([0-9a-zA-Z]*)") ){

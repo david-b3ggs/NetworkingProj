@@ -18,7 +18,7 @@ public class Error extends Message {
             throw new IOException("Message Output Null Exception");
         }
 
-        String returnString = "ERROR code=" + this.getCode() + " message=" + this.message + "\r\n";
+        String returnString = "ERROR " + this.getCode()+ " " + this.getMessage() + "\r\n";
         out.getOut().write(returnString.getBytes(StandardCharsets.ISO_8859_1));
     }
 
@@ -86,7 +86,7 @@ public class Error extends Message {
             throw new ValidationException("NULL MESSAGE SENT TO ERROR", "Null String");
         }
 
-        if (message.isEmpty() || message.matches("([0-9a-zA-Z]*)")){
+        if (message.isEmpty() || !message.matches("([0-9a-zA-Z]*)")){
             throw new ValidationException("NO SPECIAL CHARACTERS IN MESSAGE", message);
         }
     }

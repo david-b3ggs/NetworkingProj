@@ -58,7 +58,7 @@ public class Credentials extends Message{
 
     void hashValidation(String hash) throws ValidationException {
         if (hash == null){
-            throw new ValidationException("RECIEVED A NULL HASH", "Null Value");
+            throw new ValidationException("RECEIVED A NULL HASH", "Null Value");
         }
 
         if (hash.length() != 32){
