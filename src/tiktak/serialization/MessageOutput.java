@@ -16,7 +16,7 @@ import java.io.OutputStream;
  */
 public class MessageOutput {
 
-    private OutputStream out;
+    private OutputStream out;       //dynamic output stream defining protocol destination
 
     /**
      * Constructor

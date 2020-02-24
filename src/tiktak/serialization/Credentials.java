@@ -20,7 +20,7 @@ import static tiktak.serialization.TikTakConstants.*;
  */
 public class Credentials extends Message{
 
-    private String hash;
+    private String hash;    //hash value composed of md5 hash of credentials
 
     /**
      * Constructor

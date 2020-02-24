@@ -1,235 +1,45 @@
+/********************************
+ *
+ * Author: Bob Rein
+ * Assignment: Program 1
+ * Class: CSI 4321 (Networking)
+ *
+ *******************************/
+
 package tiktak.serialization.test;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
-import java.io.*;
-
 import tiktak.serialization.*;
 
-@DisplayName("All Message Tests")
+import java.io.*;
+
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+@DisplayName("Message Tests")
 public class MessageTests {
-
-
-    @Nested
-    @DisplayName("Decode Tests")
-    class DecodeTests{
-
-        @Test
-        void testMessageDecodeNullException(){
-            Assertions.assertThrows(NullPointerException.class, () -> Message.decode(null));
-        }
-
-        @Test
-        void testMessageDecodeValidException(){
-            final String input = "notgood";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-            Assertions.assertThrows(EOFException.class, () -> Message.decode(new MessageInput(in)));
-        }
-
-        @Test
-        void testMessageDecodeIOException(){
-            Assertions.assertThrows(IOException.class, () -> Message.decode(new MessageInput(new FileInputStream("badio"))));
-        }
-
-        @Test
-        void testDecodeBadMessageStart(){
-            final String input = " ID %\r\n";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-
-            Assertions.assertThrows(ValidationException.class, () -> Message.decode(new MessageInput(in)));
-        }
-
-        @Test
-        void testDecodeReturnID() throws IOException, ValidationException{
-            final String input = "ID a1\r\n";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-
-            Assertions.assertTrue(Message.decode(new MessageInput(in)) instanceof  ID);
-        }
-
-        @Test
-        void testDecodeEmptyID(){
-            final String input = "ID \r\n";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-
-            Assertions.assertThrows(EOFException.class, () -> Message.decode(new MessageInput(in)));
-        }
-
-        @Test
-        void testDecodeBadGrammer(){
-            final String input = " ID a\r\n";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-
-            Assertions.assertThrows(ValidationException.class, () -> Message.decode(new MessageInput(in)));
-        }
-
-        @Test
-        void testDecodeNonAlphNumeric1(){
-            final String input = "ID %\r\n";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-
-            Assertions.assertThrows(ValidationException.class, () -> Message.decode(new MessageInput(in)));
-        }
-
-        @Test
-        void testDecodeNonAlphNumeric2(){
-            final String input = "ID a12)\r\n";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-
-            Assertions.assertThrows(ValidationException.class, () -> Message.decode(new MessageInput(in)));
-        }
-
-        @Test
-        void testDecodeBadMessageStartID(){
-            final String input = "iD a12)\r\n";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-
-            Assertions.assertThrows(ValidationException.class, () -> Message.decode(new MessageInput(in)));
-        }
-
-        @Test
-        void testDecodeReturnVersion() throws IOException, ValidationException{
-            final String input = "TIKTAK 1.0\r\n";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-            Assertions.assertTrue(Message.decode(new MessageInput(in)) instanceof  Version);
-        }
-
-        @Test
-        void testDecodeVersionIncorrect1(){
-            final String input = "TIKTAK 1\r\n";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-
-            Assertions.assertThrows(EOFException.class, () ->Message.decode(new MessageInput(in)));
-        }
-
-        @Test
-        void testDecodeVersionIncorrect2(){
-            final String input = "TIKTAK 10\r\n";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-
-            Assertions.assertThrows(EOFException.class, () ->Message.decode(new MessageInput(in)));
-        }
-
-        @Test
-        void testDecodeBadMessageStartVersion(){
-            final String input = "TikTak 1.0\r\n";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-
-            Assertions.assertThrows(ValidationException.class, () -> Message.decode(new MessageInput(in)));
-        }
-
-        @Test
-        void testDecodeReturnChallenge() throws IOException, ValidationException{
-            final String input = "CLNG 1\r\n";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-
-            Assertions.assertTrue(Message.decode(new MessageInput(in)) instanceof Challenge);
-        }
-
-        @Test
-        void testDecodeBadServ1(){
-            final String input = "CLNG %\r\n";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-
-            Assertions.assertThrows(ValidationException.class, () -> Message.decode(new MessageInput(in)));
-        }
-
-        @Test
-        void testDecodeBadServ2(){
-            final String input = "CLNG \r\n";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-
-            Assertions.assertThrows(EOFException.class, () -> Message.decode(new MessageInput(in)));
-        }
-
-        @Test
-        void testDecodeChallengeMessageError(){
-            final String input = "NG 123\r\n";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-
-            Assertions.assertThrows(ValidationException.class, () -> Message.decode(new MessageInput(in)));
-        }
-
-        @Test
-        void testDecodeAckMessage() throws IOException, ValidationException{
-            final String input = "ACK\r\n";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-
-            Assertions.assertTrue(Message.decode(new MessageInput(in)) instanceof Ack);
-        }
-
-        @Test
-        void testInvalidACK()throws IOException, ValidationException{
-        }
-
-        @Test
-        void testDecodeTostMessage(){
-
-        }
-
-        @Test
-        void testInvalidTost(){
-
-        }
-
-        @Test
-        void testDecodeCredentials(){
-
-        }
-
-        @Test
-        void testInvalidCredentials1(){
-
-        }
-
-        @Test
-        void testInvalidCredentials2(){
-
-        }
-
-        @Test
-        void testDecodeLtsRL(){
-
-        }
-
-        @Test
-        void testInvalidLtsRL1(){
-
-        }
-
-        @Test
-        void testInvalidLtsRL2(){
-
-        }
-
-        @Test
-        void testDecodeError(){
-
-        }
-
-        @Test
-        void testInvalidError1(){
-
-        }
+    @Test
+    @DisplayName("Decode Null MessageInput")
+    void testDecodeNull()  throws NullPointerException, IOException, ValidationException {
+        assertThrows(NullPointerException.class, () ->
+                Message.decode(new MessageInput(null)));
     }
 
     @Test
-    void testGetOperationValidTIK(){
-        Message id = new Version();
-        Assertions.assertEquals("TIKTAK", id.getOperation());
+    @DisplayName("Decode Improper Format")
+    void testDecodeInproperFormat(){
+        String input = "badinput";
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        assertThrows(EOFException.class, () -> Message.decode(new MessageInput(in)));
     }
 
     @Test
-    void testGetOperationValidID() throws ValidationException{
-        Message id = new ID("USER");
-        Assertions.assertEquals("ID", id.getOperation());
+    @DisplayName("Decode Bad File")
+    void testDecodeBadFile(){
+        assertThrows(IOException.class, () -> Message.decode(new MessageInput(new FileInputStream("badio"))));
     }
 
-    @Test
-    void testGetOperationValidChallenge() throws ValidationException {
-        Message id = new Challenge("123");
-        Assertions.assertEquals("CLNG", id.getOperation());
-    }
 }

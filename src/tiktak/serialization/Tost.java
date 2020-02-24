@@ -10,6 +10,7 @@ package tiktak.serialization;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
+import static tiktak.serialization.TikTakConstants.*;
 
 /**
  * Tost message subclass for tiktak application protocol
@@ -41,7 +42,29 @@ public class Tost extends Message {
      */
     @Override
     public String toString() {
-        return "TOST";
+        return "Tost";
     }
 
+    /**
+     * Generates hash code for individual instances
+     * @return hashed integer
+     */
+    @Override
+    public int hashCode() {
+        return HASH_ACK_TOST;
+    }
+
+    /**
+     * Tests equivalence for Tost Objects
+     * @param o other Ack Object
+     * @return whether two objects are equal
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) {return false;}
+        else {
+            return true;
+        }
+    }
 }

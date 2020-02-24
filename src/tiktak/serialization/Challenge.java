@@ -20,7 +20,7 @@ import static tiktak.serialization.TikTakConstants.*;
  */
 public class Challenge extends Message {
 
-    private String nonce;
+    private String nonce;   //String nonce value for the challenge
 
     /**
      * Get nonce from object

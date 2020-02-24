@@ -22,8 +22,8 @@ import static tiktak.serialization.TikTakConstants.*;
  */
 public class LtsRL extends Message{
 
-    private String category;
-    private byte [] image;
+    private String category;    //category for image type
+    private byte [] image;      //image in base64 encoding
 
     /**
      * Constructor
@@ -90,7 +90,7 @@ public class LtsRL extends Message{
      */
     @Override
     public String toString() {
-        return "LtsRL: category=" + this.category + " image= " + image.length + " bytes";
+        return "LtsRL: category=" + this.category + " image=" + image.length + " bytes";
     }
 
     /**
@@ -129,7 +129,7 @@ public class LtsRL extends Message{
             throw new ValidationException("DO NOT SEND NULL STRINGS", "STRING WAS NULL");
         }
 
-        if (category.isEmpty() && category.isBlank() && !category.matches(ZERO_OR_MORE_ALPHANUMERIC_REGEX) ){
+        if (category.isEmpty() || category.isBlank() || !category.matches(ZERO_OR_MORE_ALPHANUMERIC_REGEX) ){
             throw new ValidationException("CATEGORY IS NOT STRICTLY ALPHANUMERIC", category);
         }
 
@@ -168,8 +168,9 @@ public class LtsRL extends Message{
         String returnString = "LTSRL " + this.getCategory() + " ";
         byte [] ret = Base64.getEncoder().encode(getImage());
 
-        out.getOut().write(returnString.getBytes(StandardCharsets.ISO_8859_1 ));
-        out.getOut().write(ret);
+
+        out.getOut().write(returnString.getBytes(StandardCharsets.ISO_8859_1));
+        out.getOut().write(ret, 0, ret.length-1);
         out.getOut().write("\r\n".getBytes(StandardCharsets.ISO_8859_1));
     }
 }

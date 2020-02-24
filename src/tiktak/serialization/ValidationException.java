@@ -14,7 +14,7 @@ package tiktak.serialization;
  * @author David Beggs
  */
 public class ValidationException extends Exception {
-    private String badToken;
+    private String badToken;        //token that caused exception
 
     /**
      * Constructor

@@ -10,6 +10,7 @@ package tiktak.serialization;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
+import static tiktak.serialization.TikTakConstants.*;
 
 /**
  * Ack message subclass for tiktak application protocol
@@ -33,17 +34,21 @@ public class Ack extends Message {
      */
     @Override
     public int hashCode() {
-        return super.hashCode();
+        return HASH_ACK_TOST;
     }
 
     /**
      * Tests equivalence for Ack Objects
-     * @param obj other Ack Object
+     * @param o other Ack Object
      * @return whether two objects are equal
      */
     @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) {return false;}
+        else {
+            return true;
+        }
     }
 
     /**

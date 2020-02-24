@@ -1,113 +1,218 @@
+/********************************
+ *
+ * Author: Bob Rein
+ * Assignment: Program 1
+ * Class: CSI 4321 (Networking)
+ *
+ *******************************/
+
 package tiktak.serialization.test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
-import tiktak.serialization.Challenge;
-import tiktak.serialization.MessageOutput;
-import tiktak.serialization.ValidationException;
+import tiktak.serialization.*;
 
-import java.io.ByteArrayOutputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @DisplayName("Challenge Tests")
 public class ChallengeTests {
 
-    private Challenge challenge = null;
+    private static final byte[] GOODINPUT = "CLNG 5000\r\n".getBytes(StandardCharsets.ISO_8859_1);
+    private static final String NONCE = "5000";
+
 
     @Test
-    void testGetNonce() throws ValidationException{
-        challenge = new Challenge("123");
-
-        Assertions.assertEquals("123", challenge.getNonce());
+    @DisplayName("toString Test")
+    void testToString() throws ValidationException {
+        assertEquals("Challenge: nonce=" + NONCE,  (new Challenge(NONCE)).toString());
     }
 
     @Test
-    void testSetNonceValid() throws ValidationException{
-        final String test = "123";
-        challenge = new Challenge(test);
-        Assertions.assertDoesNotThrow(() -> challenge.setNonce(test));
+    @DisplayName("getOperation Test")
+    void testGetOperation() throws ValidationException {
+        assertEquals("CLNG", (new Challenge(NONCE)).getOperation());
     }
 
     @Test
-    void testSetNonce1() throws ValidationException{
-        final String test= "q234";
-        challenge = new Challenge("123");
-        Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(test));
+    @DisplayName("Get ID")
+    void testGetNonce() throws ValidationException {
+        assertEquals(NONCE,  (new Challenge(NONCE)).getNonce());
+    }
+    @Test
+    @DisplayName("Equals Test")
+    void equalsString() throws ValidationException {
+        Assertions.assertEquals(
+                new Challenge(NONCE),  new Challenge(NONCE));
     }
 
     @Test
-    void testSetNonce2() throws ValidationException{
-        final String test = "23 fds";
-        challenge = new Challenge("123");
-        Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(test));
+    @DisplayName("Hashcode Test")
+    void hashcodeString() throws ValidationException {
+        Challenge a =  new Challenge(NONCE);
+        Challenge b =  new Challenge(NONCE);
+        Assertions.assertTrue(a.equals(b) && b.equals(a));
+        Assertions.assertTrue(a.hashCode() == b.hashCode());
+    }
+    
+    @Nested
+    @DisplayName("Constructor Tests")
+    class ConstructorTests{
+        @Test
+        @DisplayName("Constructor Valid")
+        void testConstructorValid(){
+            String testNonce = "123";
+            assertDoesNotThrow(() ->  new Challenge(testNonce));
+        }
+
+        @Test
+        @DisplayName("Constructor Non numeric")
+        void testConstructorNonNumeric1(){
+            String testNonce = "Hi";
+            assertThrows(ValidationException.class, () ->   new Challenge(testNonce));
+        }
+
+        @Test
+        @DisplayName("Constructor Non numeric 2")
+        void testConstructorNonNumeric2(){
+            String testNonce = "asdfsdlfdsaljk1231u9$";
+            assertThrows(ValidationException.class, () ->   new Challenge(testNonce));
+        }
+
+        @Test
+        @DisplayName("Constructor Non numeric 3")
+        void testConstructorNonNumeric3(){
+            String testNonce = "asdfsdlfd/saljk1231u9";
+            assertThrows(ValidationException.class, () ->   new Challenge(testNonce));
+        }
+
+        @Test
+        @DisplayName("Constructor Blank")
+        void testConstructorBlank(){
+            String testNonce = "";
+            assertThrows(ValidationException.class, () ->   new Challenge(testNonce));
+        }
     }
 
-    @Test
-    void testSetNonce3() throws ValidationException{
-        final String test = null;
-        challenge = new Challenge("123");
-        Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(test));
-    }
 
-    @Test
-    void testSetNonce4() throws ValidationException{
-        final String tests = "34";
-        challenge = new Challenge(tests);
-        Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(""));
-    }
-
-    @Test
-    void testSetNonce5() throws ValidationException{
-        final String test = "s?ring";
-        challenge = new Challenge("123");
-        Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(test));
-    }
-
-    @Test
-    void testSetNonce6() throws ValidationException{
-        final String test = "-1";
-        challenge = new Challenge("123");
-        Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(test));
-    }
-
-    @Test
-    void testSetNonce7() throws ValidationException{
-        final String test = "null";
-        challenge = new Challenge("123");
-        Assertions.assertThrows(ValidationException.class, () ->challenge.setNonce(test));
-    }
 
     @Nested
-    @DisplayName("EncodeTests")
-    class EncodeTests {
-
-        private final byte[] IDENC = "CLNG 123\r\n".getBytes(StandardCharsets.ISO_8859_1);
-
-        Challenge challenge = null;
-
+    @DisplayName("SetNonce Tests")
+    class SetNonceTests{
         @Test
-        void testEncodeThrowsNull(){
-            Assertions.assertThrows(NullPointerException.class, () ->
-                    challenge.encode(new MessageOutput(null)));
+        @DisplayName("SetNonce Valid")
+        void testSetNonceValid(){
+            String testNonce = "123";
+            assertDoesNotThrow(() ->    new Challenge(NONCE).setNonce(testNonce));
         }
 
         @Test
-        void testEncodeThrowsIO(){
-            Assertions.assertThrows(IOException.class, () ->
-                    challenge.encode(new MessageOutput(new FileOutputStream(""))));
+        @DisplayName("SetNonce Non numeric")
+        void testSetNonceNonNumeric1(){
+            String testNonce = "Hi";
+            assertThrows(ValidationException.class, () ->    new Challenge(NONCE).setNonce(testNonce));
         }
 
         @Test
-        void testEncode() throws NullPointerException, IOException, ValidationException {
-            ByteArrayOutputStream bout = new ByteArrayOutputStream();
-            new Challenge("123").encode(new MessageOutput(bout));
-            Assertions.assertArrayEquals(IDENC, bout.toByteArray());
+        @DisplayName("SetNonce Non numeric 2")
+        void testSetNonceNonNumeric2(){
+            String testNonce = "asdfsdlfdsaljk1231u9$";
+            assertThrows(ValidationException.class, () ->    new Challenge(NONCE).setNonce(testNonce));
+        }
+
+        @Test
+        @DisplayName("SetNonce Non numeric 3")
+        void testSetNonceNonNumeric3(){
+            String testNonce = "asdfsdlfd/saljk1231u9";
+            assertThrows(ValidationException.class, () ->    new Challenge(NONCE).setNonce(testNonce));
+        }
+
+        @Test
+        @DisplayName("SetNonce Blank")
+        void testSetNonceBlank(){
+            String testNonce = "";
+            assertThrows(ValidationException.class, () ->   new Challenge(NONCE).setNonce(testNonce));
         }
     }
 
+
+    @Nested
+    @DisplayName("Encode Tests")
+    class EncodeTests{
+
+        @Test
+        @DisplayName("Byte Array")
+        void testByteArray() throws NullPointerException, IOException, ValidationException {
+            //test is from provided example
+            ByteArrayOutputStream bout = new ByteArrayOutputStream();
+            new Challenge(NONCE).encode (new MessageOutput(bout));
+            assertArrayEquals(GOODINPUT, bout.toByteArray());
+        }
+
+        @Test
+        @DisplayName("Null MessageOutput")
+        void testNull(){
+            assertThrows(NullPointerException.class, () ->
+                    (new Challenge(NONCE)).encode (new MessageOutput(null)));
+        }
+
+        @Test
+        @DisplayName("Encode to no outputstream")
+        void testNoStream(){
+            assertThrows(NullPointerException.class, () ->
+                    (new Challenge(NONCE)).encode(null));
+        }
+
+    }
+    @Nested
+    @DisplayName("Decode Tests")
+    class DecodeTests{
+        @Test
+        @DisplayName("Byte Array")
+        void testByteArray() throws NullPointerException, IOException, ValidationException {
+            //based on test from provided example
+            Challenge challenge = (Challenge) Message.decode(new MessageInput(new ByteArrayInputStream(GOODINPUT)));
+            assertEquals(NONCE, challenge.getNonce());
+            assertEquals("CLNG", challenge.getOperation());
+        }
+
+        @Test
+        @DisplayName("Special Character")
+        void testSpecialCharacter(){
+            String input = "CLNG %\r\n";
+            InputStream in = new ByteArrayInputStream(input.getBytes());
+            Assertions.assertThrows(ValidationException.class, () -> Message.decode(new MessageInput(in)));
+        }
+
+        @Test
+        @DisplayName("Alphanumeric")
+        void testAlphanumeric(){
+            String input = "CLNG abc123\r\n";
+            InputStream in = new ByteArrayInputStream(input.getBytes());
+            Assertions.assertThrows(ValidationException.class, () -> Message.decode(new MessageInput(in)));
+        }
+
+        @Test
+        @DisplayName("Empty Nonce")
+        void testEmptyNonce(){
+            String input = "CLNG \r\n";
+            InputStream in = new ByteArrayInputStream(input.getBytes());
+            Assertions.assertThrows(EOFException.class, () -> Message.decode(new MessageInput(in)));
+        }
+
+        @Test
+        @DisplayName("Invalid Command")
+        void testInvalidCommand(){
+            String input = "NG 123\r\n";
+            InputStream in = new ByteArrayInputStream(input.getBytes());
+            Assertions.assertThrows(ValidationException.class, () -> Message.decode(new MessageInput(in)));
+        }
+
+    }
 
 }

@@ -16,7 +16,7 @@ import java.io.InputStream;
  */
 public class MessageInput {
 
-    private InputStream i;
+    private InputStream i;      //dynamic input stream defining source
 
     /**
      * Constructor

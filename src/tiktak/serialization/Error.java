@@ -20,8 +20,8 @@ import static tiktak.serialization.TikTakConstants.*;
  */
 public class Error extends Message {
 
-    private int code;
-    private String message;
+    private int code;       //3 digit error code starting with 1
+    private String message; //Message of error descriptions
 
     /**
      * Encodes current object to ISO_8859_1 charset to outputstream
@@ -155,7 +155,7 @@ public class Error extends Message {
             throw new ValidationException("NULL MESSAGE SENT TO ERROR", "Null String");
         }
 
-        if (message.isEmpty() || !message.matches(ZERO_OR_MORE_ALPHANUMERIC_REGEX)){
+        if (message.isEmpty() || !message.matches(MESSAGE_REGEX)){
             throw new ValidationException("NO SPECIAL CHARACTERS IN MESSAGE", message);
         }
 

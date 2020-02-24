@@ -19,7 +19,7 @@ import static tiktak.serialization.TikTakConstants.*;
  */
 public class Version extends Message {
 
-    private final String version = VERSION_NUMBER;
+    private final String version = VERSION_NUMBER;      //current protocol version number
 
     public Version(){
         super();
@@ -54,8 +54,7 @@ public class Version extends Message {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Version version1 = (Version) o;
-        return Objects.equals(version, version1.version);
+        return true;
     }
 
     /**

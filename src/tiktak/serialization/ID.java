@@ -20,7 +20,7 @@ import static tiktak.serialization.TikTakConstants.*;
  */
 public class ID extends Message {
 
-    private String id;
+    private String id;  //Id for client identification
 
     /**
      * Constructor
