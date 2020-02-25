@@ -1,3 +1,6 @@
+# David Beggs
+# Program 2
+# Test script for tiktak Client
 #!/usr/bin/bash
 
 javac tiktak/*/*.java tiktak/app/*/*.java
