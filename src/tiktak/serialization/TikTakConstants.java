@@ -47,4 +47,6 @@ public abstract class TikTakConstants {
     public static final String CREDENTIALS = "CREDENTIALS";
     public static final String CREDENTIASL_GET_OP = "CRED";
 
+    public static final String HASH_TYPE = "MD5";
+
 }
