@@ -1,3 +1,6 @@
 tiktak.app.client
+tiktak.app.server
+tiktak.app.yipper
 tiktak.serialization
 tiktak.serialization.test
+topic.serialization

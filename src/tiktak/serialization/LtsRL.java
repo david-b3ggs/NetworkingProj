@@ -166,11 +166,10 @@ public class LtsRL extends Message{
         }
 
         String returnString = "LTSRL " + this.getCategory() + " ";
-        byte [] ret = Base64.getEncoder().encode(getImage());
-
+        byte [] ret = Base64.getEncoder().withoutPadding().encode(getImage());
 
         out.getOut().write(returnString.getBytes(StandardCharsets.ISO_8859_1));
-        out.getOut().write(ret, 0, ret.length-1);
+        out.getOut().write(ret);
         out.getOut().write("\r\n".getBytes(StandardCharsets.ISO_8859_1));
     }
 }

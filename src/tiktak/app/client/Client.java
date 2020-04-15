@@ -40,9 +40,9 @@ public class Client {
      *
      * @param args Command line arguments sent to the program
      * @throws IOException              Thrown if socket IO error happens when creating the socket
-     * @throws NoSuchAlgorithmException Thrown if md5 hash is not recognized in digester
+     * @throws IOException Thrown if md5 hash is not recognized in digester
      */
-    public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
+    public static void main(String[] args) throws IOException {
 
         if ((args.length < 5) || (args.length > 7)) {  // Test for correct # of args
             throw new IllegalArgumentException("Parameter(s): <Server> <port> <userid> <password> <request...> | <category> <image file>");
@@ -88,7 +88,6 @@ public class Client {
             } catch (ValidationException e) {
                 System.err.println("Invalid Message: " + "Invalid Message Error");
                 exit(-1);
-            } catch (NullPointerException e) {
             }
 
             if (currentMessage == null) {        //incase while loop outpaces message stream, could produce deadlock
@@ -112,6 +111,7 @@ public class Client {
                             if (orderQueue.peek().equals(CHALLENGE_GET_OP)) {
                                 lastMessageSent = responseChallenge(out, (Challenge) currentMessage, passString);
                                 orderQueue.remove();
+                                //sleep(22000);
                             } else {
                                 unexpectedError(currentMessage);
                             }
@@ -154,6 +154,9 @@ public class Client {
                     System.err.println("Validation failed: " + currentMessage.toString());
                     exit(-1);
                 }
+                catch (Exception e){
+
+                }
             }
         }
 
@@ -192,7 +195,6 @@ public class Client {
 
         MessageDigest md = MessageDigest.getInstance(HASH_TYPE);
         String hashComponents = message.getNonce() + pass;
-        //specify encoding?
         byte[] mDigest = md.digest(hashComponents.getBytes(StandardCharsets.ISO_8859_1));
 
         BigInteger bigBoi = new BigInteger(1, mDigest);

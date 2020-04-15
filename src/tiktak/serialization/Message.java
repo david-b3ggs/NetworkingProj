@@ -52,9 +52,11 @@ public abstract class Message {
         Scanner s = new Scanner(in.getInStream(), StandardCharsets.ISO_8859_1); //create a scanner for non blocking read
         s.useDelimiter(SCANNER_DELIMITER);
 
+
         //throws exception when stream ends before delimiter
         if (!s.hasNext()){
             throw new EOFException("PREMATURE END OF STREAM REACHED");
+
         }
 
         String message = s.next();  //read next message
@@ -174,10 +176,6 @@ public abstract class Message {
                 throw new ValidationException("INCORRECT CATEGORY DEFINITION", message);
             }
 
-            //test image syntax
-            if (!components[2].matches(BASE_64_COMPATABLE_REGEX)){
-                throw new ValidationException("NOT BASE64 ENCODED IMAGE", message);
-            }
 
             //return new obj
             return new LtsRL(components[1], Base64.getDecoder().decode(components[2]));
