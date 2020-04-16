@@ -75,7 +75,6 @@ public class Server implements Runnable {
                 LOGGER.log(Level.WARNING, "ERROR: FAILURE TO SEND PACKET");
             }
         }
-
     }
 
     /**

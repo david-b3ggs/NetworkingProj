@@ -90,11 +90,10 @@ public class Client {
                     receivedResponse = false;
                     tries++;
                 }
-                else {                  //verify response errorcode
-                    if (response.getErrorCode().getErrorCodeValue() != 0){
-                        System.err.println(response.getErrorCode().getErrorMessage());
-                        exit(-1);
-                    }
+                else if (response.getErrorCode().getErrorCodeValue() != 0) {
+                        //verify error code
+                    System.err.println(response.getErrorCode().getErrorMessage());
+                    exit(-1);
                 }
 
             } catch (InterruptedIOException e){     //increment number of tries

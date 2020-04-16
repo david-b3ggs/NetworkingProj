@@ -366,3 +366,7 @@ Apr 15, 2020 11:21:48 PM tiktak.app.server.ClientHandler run
 INFO: Message received: Tost
 Apr 15, 2020 11:21:48 PM tiktak.app.server.ClientHandler responseTost
 INFO: Message Sent: Ack
+Apr 16, 2020 12:08:39 AM tiktak.app.server.Server main
+SEVERE: Unable to start: could not find file
+Apr 16, 2020 12:08:48 AM tiktak.app.server.Server main
+SEVERE: Unable to start: could not find file
