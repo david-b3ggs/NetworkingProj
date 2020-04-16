@@ -99,6 +99,7 @@ public class Client {
 
             } catch (InterruptedIOException e){     //increment number of tries
                 tries++;
+                System.out.println("Timeout");
             }
         } while ((!receivedResponse) && (tries < MAXTRIES));        //attempt until max tries hit
 

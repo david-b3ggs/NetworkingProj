@@ -114,6 +114,12 @@ public class Query extends Message{
         return this.requestedPosts;
     }
 
+    /**
+     * Sets the num of requestedPosts
+     * @param requestedPosts int
+     * @return this object
+     * @throws IllegalArgumentException if int out of bounds
+     */
     public final Query setRequestedPosts(int requestedPosts) throws IllegalArgumentException{
         if (requestedPosts > MAX_REQUESTS || requestedPosts < 0){
             throw new IllegalArgumentException("REQUESTED POSTS OUT OF BOUNDS");

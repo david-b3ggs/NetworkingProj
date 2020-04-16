@@ -44,7 +44,7 @@ public class Client {
      */
     public static void main(String[] args) throws IOException {
 
-        if ((args.length < 5) || (args.length > 7)) {  // Test for correct # of args
+        if ((args.length == 5) || (args.length == 7)) {  // Test for correct # of args
             throw new IllegalArgumentException("Parameter(s): <Server> <port> <userid> <password> <request...> | <category> <image file>");
         }
 

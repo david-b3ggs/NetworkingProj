@@ -1,2 +1,368 @@
 Apr 15, 2020 6:02:03 PM tiktak.app.server.Server main
 SEVERE: Unable to start: could not find file
+Apr 15, 2020 8:51:55 PM tiktak.app.server.Server main
+SEVERE: Unable to start: could not find file
+Apr 15, 2020 8:52:22 PM tiktak.app.server.Server main
+SEVERE: Unable to start: could not find file
+Apr 15, 2020 8:54:39 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 8:54:39 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 8:54:39 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=1511074294
+Apr 15, 2020 8:54:39 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=3107D94ECBE792B8844DE8670B835F25
+Apr 15, 2020 8:54:39 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 8:54:39 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 8:55:36 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 8:55:36 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 8:55:36 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=239463681
+Apr 15, 2020 8:55:36 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=EB84FFA5D94312D50CFFE91B14F00198
+Apr 15, 2020 8:55:36 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 8:55:36 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 8:55:36 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 8:55:39 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 8:55:39 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 8:55:39 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=650607502
+Apr 15, 2020 8:55:39 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=0246C36E2555237039D03A3F607A319C
+Apr 15, 2020 8:55:39 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 8:55:39 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 8:55:39 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 8:55:43 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 8:55:43 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 8:55:43 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=647627786
+Apr 15, 2020 8:55:43 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=CE8433A9109532CDFFA85537D296ABE4
+Apr 15, 2020 8:55:43 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 8:55:43 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 8:55:43 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 8:59:09 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 8:59:09 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 8:59:09 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=1706098946
+Apr 15, 2020 8:59:09 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=720169332E78D112B1FE45BC8379CEC7
+Apr 15, 2020 8:59:09 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 8:59:09 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 8:59:09 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 8:59:14 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 8:59:14 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 8:59:14 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=40939414
+Apr 15, 2020 8:59:15 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=168009BE14FBCAA1E7C76D94FCDE8E40
+Apr 15, 2020 8:59:15 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 8:59:15 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 8:59:15 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 8:59:22 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 8:59:22 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 8:59:22 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=1168741437
+Apr 15, 2020 8:59:22 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=D1ACDFB4CC3E7333EE344ADBCE8AF8A5
+Apr 15, 2020 8:59:22 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 8:59:22 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 8:59:22 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 9:08:11 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 9:08:11 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 9:08:11 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=295022060
+Apr 15, 2020 9:08:11 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=7A14CB5B9C30181B7DDFD22FCFB084FF
+Apr 15, 2020 9:08:11 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 9:08:11 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 9:08:11 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 9:08:38 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 9:08:38 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 9:08:38 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=795450805
+Apr 15, 2020 9:08:38 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=0EE8DB5E47E763272735063F3C9C340F
+Apr 15, 2020 9:08:38 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 9:08:38 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 9:08:38 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 9:09:51 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 9:09:51 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 9:09:51 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=1366264636
+Apr 15, 2020 9:09:51 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=580A1A737E2247B44CE1C21B87631DCF
+Apr 15, 2020 9:09:51 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 9:09:51 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 9:09:51 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 9:10:05 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 9:10:05 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 9:10:05 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=1966291324
+Apr 15, 2020 9:10:05 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=4B64AF2121136C4313ED2632A9FD8508
+Apr 15, 2020 9:10:05 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 9:10:05 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 9:10:05 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 9:12:44 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 9:12:44 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 9:12:44 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=2037016931
+Apr 15, 2020 9:12:44 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=5EFDC4E228CDF20C17E830FE8D7E52A1
+Apr 15, 2020 9:12:44 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 9:12:44 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 9:12:44 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 9:15:48 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 9:15:48 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 9:15:48 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=2088814194
+Apr 15, 2020 9:15:48 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=DCBB36D8E8DF72AD5F5AA60ED53288C0
+Apr 15, 2020 9:15:48 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 9:15:48 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 9:15:48 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 9:18:09 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 9:18:09 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 9:18:09 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=448102421
+Apr 15, 2020 9:18:09 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=D5589B842B4E2F0456A1EB9DA17FF871
+Apr 15, 2020 9:18:09 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 9:18:09 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 9:18:09 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 9:21:46 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 9:21:46 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 9:21:46 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=1518478359
+Apr 15, 2020 9:21:46 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=A30734291636E980B35D507308A69EC7
+Apr 15, 2020 9:21:46 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 9:21:46 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 9:21:46 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 9:24:33 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 9:24:33 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 9:24:33 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=314522088
+Apr 15, 2020 9:24:33 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=42970B8230B9B3B6C0DEC9724F7DD6D7
+Apr 15, 2020 9:24:33 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 9:24:33 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 9:24:33 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 9:25:14 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 9:25:14 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 9:25:14 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=1357611556
+Apr 15, 2020 9:25:14 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=746C7407861E38791FA38A733413AD3F
+Apr 15, 2020 9:25:14 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 9:25:14 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 9:25:14 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 9:28:51 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 9:28:51 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 9:28:51 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=725916119
+Apr 15, 2020 9:28:51 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=F3B016CC0C2DBD356C25A07BE5C4E171
+Apr 15, 2020 9:28:51 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 9:28:51 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 9:28:51 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 9:32:55 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 9:32:55 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 9:32:55 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=1221368575
+Apr 15, 2020 9:32:55 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=6B5DAFC54DC8CA50C5F679999BE4399C
+Apr 15, 2020 9:32:55 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 9:32:55 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 9:32:55 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 9:32:57 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 9:32:58 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 9:32:58 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=1849999267
+Apr 15, 2020 9:32:58 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=378F1F7C961F146DCB0518AC31B1043C
+Apr 15, 2020 9:32:58 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 9:32:58 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 9:32:58 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 11:18:31 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 11:18:31 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 11:18:31 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=582319610
+Apr 15, 2020 11:18:31 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=296FB46F25F3C5D302A343E0D337A45B
+Apr 15, 2020 11:18:31 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 11:18:31 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 11:18:31 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 11:18:35 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 11:18:35 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 11:18:35 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=2115312178
+Apr 15, 2020 11:18:35 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=D4CDF7A00CB607657301DDC1AD85A21D
+Apr 15, 2020 11:18:35 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 11:18:35 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 11:18:35 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 11:18:39 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 11:18:39 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 11:18:39 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=808765364
+Apr 15, 2020 11:18:39 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=9B02D3E42C09369635F1EE47B8AFD49B
+Apr 15, 2020 11:18:39 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 11:18:39 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 11:18:39 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 11:21:42 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 11:21:42 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 11:21:42 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=778599859
+Apr 15, 2020 11:21:42 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=43E52939AE78AD9E1D278FB0B31BED15
+Apr 15, 2020 11:21:42 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 11:21:42 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 11:21:42 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 11:21:45 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 11:21:45 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 11:21:45 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=309867181
+Apr 15, 2020 11:21:45 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=730BC162C1568A352A1655AC0B4EFC63
+Apr 15, 2020 11:21:45 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 11:21:45 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 11:21:45 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack
+Apr 15, 2020 11:21:48 PM tiktak.app.server.Server main
+INFO: New client at : /127.0.0.1 : 12346
+Apr 15, 2020 11:21:48 PM tiktak.app.server.ClientHandler run
+INFO: Message received: ID: id=beggs
+Apr 15, 2020 11:21:48 PM tiktak.app.server.ClientHandler responseID
+INFO: Message Sent: Challenge: nonce=1194936114
+Apr 15, 2020 11:21:48 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Credentials: hash=AC84AB27CB89C3692F1E7D742E62C0EC
+Apr 15, 2020 11:21:48 PM tiktak.app.server.ClientHandler responseCred
+INFO: Message Sent: Ack
+Apr 15, 2020 11:21:48 PM tiktak.app.server.ClientHandler run
+INFO: Message received: Tost
+Apr 15, 2020 11:21:48 PM tiktak.app.server.ClientHandler responseTost
+INFO: Message Sent: Ack

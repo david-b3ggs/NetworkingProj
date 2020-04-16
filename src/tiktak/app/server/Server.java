@@ -1,7 +1,11 @@
 package tiktak.app.server;
 
 
+import tiktak.serialization.Message;
+
 import java.io.*;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
@@ -70,6 +74,8 @@ public class Server {
 
         Map<String, Integer> tostMap = new HashMap<>();
         Map<String, String> userData = new HashMap<>();
+        CopyOnWriteArrayList<String> archive = new CopyOnWriteArrayList<>();
+
 
         try {               //create scanner to parse passwordFile
             scanMan = new Scanner(new FileInputStream(passFile), StandardCharsets.ISO_8859_1);
@@ -83,12 +89,17 @@ public class Server {
             exit(-1);
         }
                             //Create threadpool
-        ExecutorService threadPool = Executors.newFixedThreadPool(threadCount);
-                            //initialize socket
-        ServerSocket sock = null;
+        ExecutorService threadPool = Executors.newFixedThreadPool(threadCount + 1);
+
+        //initialize udp thread and execute continuously
+        topic.app.server.Server udpServer = new topic.app.server.Server(archive, portNumber);
+        threadPool.execute(udpServer);
+
+        ServerSocket sock = null;       //initialize socket
 
         try {
             sock = new ServerSocket(portNumber);
+
         } catch (IOException e) {
             LOGGER.log(Level.SEVERE,"Unable to start: port number issue");
             exit(-1);
@@ -98,18 +109,20 @@ public class Server {
             Socket client = null;
             try {
                 client = sock.accept();     //accept incoming client connection
+
                 client.setSoTimeout(MAX_TIMEOUT);   //set 20s timeout
 
                 LOGGER.log(Level.INFO, "New client at : " + client.getLocalAddress().toString() + " : " +
-                client.getLocalPort());
+                        client.getLocalPort());
 
-                                //Create thread and pass relevant data
+                //Create thread and pass relevant data
                 ClientHandler currHandler = new ClientHandler();
                 currHandler.setClientSocket(client);
                 currHandler.setUserMap(userData);
                 currHandler.setTostMap(tostMap);
+                currHandler.setArchive(archive);
                 currHandler.setLOGGER(LOGGER);
-                                //execute thread
+                //execute thread
                 threadPool.execute(currHandler);
 
             } catch (IOException e){
@@ -148,4 +161,6 @@ public class Server {
 
         return ret;
     }
+
+
 }

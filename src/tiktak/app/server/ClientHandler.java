@@ -13,6 +13,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -36,6 +37,7 @@ class ClientHandler implements Runnable {
     private Integer nonce;                      //current calculated nonce
     private String hash;                        //generated hash for id verification
     private Logger LOGGER;                      //Logger
+    private CopyOnWriteArrayList<String> archive;
 
     /**
      * Run function immplements runnable and starts thread control flow
@@ -233,6 +235,9 @@ class ClientHandler implements Runnable {
             yip.update(user + ": " + toast.toString() + " " + 1);
         }
 
+        //archive Message
+        this.archive.add(user + ": " + toast.toString() + " " + tostMap.get(user));
+
         Ack show = new Ack();                   //send ack after yip display
         show.encode(new MessageOutput(clientSocket.getOutputStream()));
         LOGGER.log(Level.INFO, "Message Sent: " + show.toString());
@@ -248,6 +253,7 @@ class ClientHandler implements Runnable {
                                 //display ltsrl to yip
         yip.updateWithImage(user + ": LtsRL #" + roller.getCategory(), roller.getImage());
 
+        this.archive.add(user + ": LtsRL #" + roller.getCategory());
         Ack show = new Ack();                  //send ack after yip display
         show.encode(new MessageOutput(clientSocket.getOutputStream()));
         LOGGER.log(Level.INFO, "Message Sent: " + show.toString());
@@ -309,5 +315,23 @@ class ClientHandler implements Runnable {
      */
     public void setTostMap(Map<String, Integer> tostMap) {
         this.tostMap = tostMap;
+    }
+
+    /**
+     * Returns object archive
+     * @return List
+     */
+    public CopyOnWriteArrayList<String> getArchive() {
+        return archive;
+    }
+
+    /**
+     * Sets object Archive
+     * @param archive CopyOnWriteArrayList
+     * @return current object
+     */
+    public ClientHandler setArchive(CopyOnWriteArrayList<String> archive) {
+        this.archive = archive;
+        return this;
     }
 }

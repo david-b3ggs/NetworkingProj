@@ -20,4 +20,5 @@ public abstract class TopicConstants {
     public static final Integer EPHEMERAL_MIN = 1024;
     public static final Integer EPHEMERAL_MAX = 65535;
 
+    public static final Integer MAX_PAYLOAD = 65507;
 }

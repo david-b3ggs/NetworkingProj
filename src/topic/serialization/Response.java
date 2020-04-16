@@ -277,6 +277,11 @@ public class Response extends Message {
         }
     }
 
+    /**
+     * Checks post validity
+     * @param s string
+     * @throws IllegalArgumentException thrown if bad format
+     */
     private void testPost(String s) throws IllegalArgumentException {
         if (null == s){
             throw new IllegalArgumentException("POST IS NULL");

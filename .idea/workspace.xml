@@ -2,89 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e9fc1b9-cd6d-4c7c-90fe-8ef42f6f9798" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/QueryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ResponseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tiktak/app/server/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tiktak/app/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tiktak/app/yipper/Yipper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/topic/app/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/topic/app/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/topic/serialization/ErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/topic/serialization/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/topic/serialization/Query.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/topic/serialization/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/topic/serialization/TopicConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/topic/serialization/TopicException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/element-list" beforeDir="false" afterPath="$PROJECT_DIR$/element-list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/member-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/member-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connections.log" beforeDir="false" afterPath="$PROJECT_DIR$/connections.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/TikTak_jar/TikTak.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TikTak_jar/TikTak.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/Prog2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/test.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/app/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/app/client/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/Ltsrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/Ltsrl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/TikTakConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/serialization/TikTakConstants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/package-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/package-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/serialized-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Prog2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/app/server/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/app/server/ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TikTak/tiktak/app/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/tiktak/app/server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TikTak/topic/app/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/topic/app/client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TikTak/topic/app/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/topic/app/server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TikTak/topic/serialization/Query.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/topic/serialization/Query.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TikTak/topic/serialization/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/topic/serialization/Response.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TikTak/topic/serialization/TopicConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TikTak/topic/serialization/TopicConstants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tiktak/app/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/app/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tiktak/serialization/LtsRL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/serialization/LtsRL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tiktak/serialization/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/serialization/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tiktak/serialization/TikTakConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/serialization/TikTakConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/app/client/Client.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/app/client/Client.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/app/client/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/app/client/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/app/client/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/app/client/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/Ack.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/Ack.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/Challenge.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/Challenge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/Credentials.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/Credentials.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/Error.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/Error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/ID.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/ID.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/LtsRL.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/LtsRL.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/Message.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/Message.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/MessageInput.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/MessageInput.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/MessageOutput.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/MessageOutput.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/TikTakConstants.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/TikTakConstants.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/Tost.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/Tost.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/ValidationException.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/ValidationException.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/Version.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/Version.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/test/AckTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/test/AckTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/test/ChallengeTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/test/ChallengeTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/test/MessageTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/test/MessageTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/test/TostTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/test/TostTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/test/VersionTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/test/VersionTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/test/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/test/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktak/serialization/test/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiktak/serialization/test/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/type-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/type-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tiktak/app/server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/app/server/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tiktak/app/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiktak/app/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tiktak/badfile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tiktak/clienttest.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tiktak/passfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tiktak/servertest.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tiktak/windows.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/topic/app/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/topic/app/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/topic/app/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/topic/app/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/topic/serialization/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/topic/serialization/Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/topic/serialization/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/topic/serialization/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/topic/serialization/TopicConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/topic/serialization/TopicConstants.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -102,61 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/topic/serialization/Query.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3351#3352#0" expanded="true" />
-                <element signature="e#3393#3394#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/topic/serialization/Response.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4203#4204#0" expanded="true" />
-                <element signature="e#4235#4236#0" expanded="true" />
-                <element signature="e#4717#4718#0" expanded="true" />
-                <element signature="e#4745#4746#0" expanded="true" />
-                <element signature="e#7719#7720#0" expanded="true" />
-                <element signature="e#7799#7800#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/topic/app/client/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/topic/app/server/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tiktak/app/client/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="238">
+              <caret line="97" column="17" lean-forward="true" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tiktak/app/server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="116" column="42" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
+            <state relative-caret-position="2533">
+              <caret line="149" column="29" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -176,11 +67,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/topic/app/server/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2820">
+              <caret line="196" column="21" lean-forward="true" selection-start-line="196" selection-start-column="21" selection-end-line="196" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#5641#5642#0" expanded="true" />
+                <element signature="e#6026#6027#0" expanded="true" />
+                <element signature="e#6360#6361#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tiktak/app/server/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3621">
-              <caret line="213" column="68" selection-start-line="213" selection-start-column="68" selection-end-line="213" selection-end-column="68" />
+            <state relative-caret-position="-3232">
+              <caret line="74" column="62" lean-forward="true" selection-start-line="74" selection-start-column="62" selection-end-line="74" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tiktak/app/client/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -200,15 +118,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>yipper</find>
-      <find>nullpointer</find>
-      <find>valueof</find>
-      <find>tobyte</find>
-      <find>new</find>
-      <find>setpost</find>
-      <find>verifyErrorcod</find>
-      <find>standard</find>
-      <find>byteb</find>
       <find>big</find>
       <find>setpos</find>
       <find>getErro</find>
@@ -229,7 +138,16 @@
       <find>NOERROR</find>
       <find>tostring</find>
       <find>log</find>
+      <find>usermap</find>
+      <find>Map&lt;Message, Date&gt;</find>
+      <find>messages</find>
+      <find>list</find>
       <find>severe</find>
+      <find>e.get</find>
+      <find>setRequested</find>
+      <find>testpost</find>
+      <find>decod</find>
+      <find>timeout</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\steph\IdeaProjects\TikTak\tiktak</dir>
@@ -243,7 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/tiktak/serialization/main/MessageOutput.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/test/MessageClassTests.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/main/Message.java" />
         <option value="$PROJECT_DIR$/src/tiktak/serialization/main/ID.java" />
@@ -285,15 +202,16 @@
         <option value="$PROJECT_DIR$/src/topic/serialization/QueryTest.java" />
         <option value="$PROJECT_DIR$/src/topic/serialization/TopicException.java" />
         <option value="$PROJECT_DIR$/src/ResponseTest.java" />
-        <option value="$PROJECT_DIR$/src/tiktak/app/client/Client.java" />
-        <option value="$PROJECT_DIR$/src/topic/serialization/Query.java" />
         <option value="$PROJECT_DIR$/src/topic/serialization/ErrorCode.java" />
-        <option value="$PROJECT_DIR$/src/topic/serialization/Response.java" />
-        <option value="$PROJECT_DIR$/src/topic/serialization/TopicConstants.java" />
-        <option value="$PROJECT_DIR$/src/topic/app/client/Client.java" />
-        <option value="$PROJECT_DIR$/src/topic/app/server/Server.java" />
+        <option value="$PROJECT_DIR$/src/tiktak/file.txt" />
         <option value="$PROJECT_DIR$/src/tiktak/app/server/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/topic/serialization/TopicConstants.java" />
         <option value="$PROJECT_DIR$/src/tiktak/app/server/Server.java" />
+        <option value="$PROJECT_DIR$/src/topic/app/server/Server.java" />
+        <option value="$PROJECT_DIR$/src/topic/serialization/Query.java" />
+        <option value="$PROJECT_DIR$/src/topic/serialization/Response.java" />
+        <option value="$PROJECT_DIR$/src/tiktak/app/client/Client.java" />
+        <option value="$PROJECT_DIR$/src/topic/app/client/Client.java" />
       </list>
     </option>
   </component>
@@ -330,47 +248,6 @@
               <item name="TikTak" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="TikTak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TikTak" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tiktak" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TikTak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TikTak" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tiktak" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TikTak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TikTak" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tiktak" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TikTak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TikTak" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tiktak" type="462c0819:PsiDirectoryNode" />
-              <item name="serialization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TikTak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TikTak" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="topic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TikTak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TikTak" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="topic" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -400,6 +277,7 @@
       <recent name="tiktak.serialization" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\steph\IdeaProjects\TikTak\src" />
       <recent name="C:\Users\steph\IdeaProjects\TikTak\src\tiktak\app\client" />
       <recent name="C:\Users\steph\IdeaProjects\TikTak\src\tiktak" />
       <recent name="C:\Users\steph\IdeaProjects\TikTak\src\tiktak\serialization\test" />
@@ -417,7 +295,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Server">
+  <component name="RunManager" selected="Application.TopicClient">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="tiktak.app.client.Client" />
       <module name="TikTak" />
@@ -429,7 +307,7 @@
     <configuration name="Server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="tiktak.app.server.Server" />
       <module name="TikTak" />
-      <option name="PROGRAM_PARAMETERS" value="12346 1 C:\Users\steph\IdeaProjects\TikTak\src\tiktak\passFile" />
+      <option name="PROGRAM_PARAMETERS" value="12346 1 C:\Users\steph\IdeaProjects\TikTak\src\tiktak\file.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -437,7 +315,7 @@
     <configuration name="TopicClient" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="topic.app.client.Client" />
       <module name="TikTak" />
-      <option name="PROGRAM_PARAMETERS" value="129.62.148.8 12345 16" />
+      <option name="PROGRAM_PARAMETERS" value="wind 4002 10" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -554,7 +432,7 @@
       <workItem from="1584991436265" duration="5757000" />
       <workItem from="1585619500302" duration="21652000" />
       <workItem from="1585843420425" duration="46400000" />
-      <workItem from="1586488693276" duration="4070000" />
+      <workItem from="1586488693276" duration="21934000" />
     </task>
     <servers />
   </component>
@@ -591,13 +469,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="304457000" />
+    <option name="totallyTimeSpent" value="322321000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20702268" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20702268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -606,7 +483,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32818532" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33075932" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31402832" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35392535" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -629,7 +506,7 @@
       <window_info anchor="right" id="Palette&#9;" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.20702268" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20702268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -638,7 +515,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32818532" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26898327" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24066924" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35392535" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -703,18 +580,6 @@
           <properties />
           <option name="timeStamp" value="75" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/topic/serialization/Response.java</url>
-          <line>222</line>
-          <properties />
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/topic/serialization/Response.java</url>
-          <line>197</line>
-          <properties />
-          <option name="timeStamp" value="93" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -745,16 +610,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/test/ErrorTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="203" selection-start-line="203" selection-end-line="203" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-13.0.2/lib/src.zip!/java.base/java/util/Base64.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -894,7 +749,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tiktak/passFile" />
     <entry file="file://$PROJECT_DIR$/outputFile" />
-    <entry file="file://$PROJECT_DIR$/outputFile.html" />
     <entry file="file://$PROJECT_DIR$/connections.log" />
     <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/Version.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -910,16 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/LtsRL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="171" column="32" selection-start-line="171" selection-start-column="32" selection-end-line="171" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1113,10 +957,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ResponseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="170" column="9" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiktak/serialization/LtsRL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2703">
+          <caret line="171" column="32" selection-start-line="171" selection-start-column="32" selection-end-line="171" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/file.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputFile.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/topic/app/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2820">
+          <caret line="196" column="21" lean-forward="true" selection-start-line="196" selection-start-column="21" selection-end-line="196" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5641#5642#0" expanded="true" />
+            <element signature="e#6026#6027#0" expanded="true" />
+            <element signature="e#6360#6361#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/topic/serialization/TopicConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/topic/serialization/Response.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="5117">
+          <caret line="301" column="31" selection-start-line="301" selection-start-column="31" selection-end-line="301" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4203#4204#0" expanded="true" />
@@ -1129,31 +1023,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/topic/app/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/topic/app/client/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/topic/serialization/TopicConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/topic/serialization/Query.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="44">
+          <caret line="120" column="60" selection-start-line="120" selection-start-column="60" selection-end-line="120" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3351#3352#0" expanded="true" />
@@ -1162,20 +1035,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiktak/app/client/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/tiktak/app/server/ClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="-3232">
+          <caret line="74" column="62" lean-forward="true" selection-start-line="74" selection-start-column="62" selection-end-line="74" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ResponseTest.java">
+    <entry file="file://$PROJECT_DIR$/src/tiktak/app/client/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="170" column="9" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="9" />
+        <state relative-caret-position="242">
+          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1184,18 +1057,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tiktak/app/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="116" column="42" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
+        <state relative-caret-position="2533">
+          <caret line="149" column="29" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiktak/app/server/ClientHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/topic/app/client/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3621">
-          <caret line="213" column="68" selection-start-line="213" selection-start-column="68" selection-end-line="213" selection-end-column="68" />
+        <state relative-caret-position="238">
+          <caret line="97" column="17" lean-forward="true" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
