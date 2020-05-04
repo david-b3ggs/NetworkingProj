@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 public class ResponseTest {
 
@@ -152,7 +154,7 @@ public class ResponseTest {
             byte [] testArray = encodedGoodPacket;
             for (ErrorCode errorCode: ErrorCode.values()){
                 testArray [1]= (byte)errorCode.getErrorCodeValue();
-                assertDoesNotThrow( () -> {
+                Assertions.assertDoesNotThrow( () -> {
                     new Response(testArray);
                 });
             }

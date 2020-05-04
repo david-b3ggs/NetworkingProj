@@ -19,5 +19,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="junit-jupiter-api-5.3.1" level="project" />
   </component>
 </module>
